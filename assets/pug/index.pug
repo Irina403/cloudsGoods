@@ -1,152 +1,216 @@
 extends _layout
 block content_block
 	section.main
-		.section_in 
-			h1 Лучшее оборудование для автомоек с доставкой в ваш регион!
-			.main__btn.btn-all.js-open-modal(data-modal="price") 
-				a(href="#")  Скачать прайс-лист
-
-	.section_in 
-		.advantages-block#advant 
-			ul.advantages-block__list.advantages-block__desck
-				-for(i = 1; i < 5; i++)
-					- title = ['' , 'Ассортимент' , 'Сервис' , 'Помощь' , 'Скидки']
-					- text = ['' , 'Большой выбор товаров для автомоек, включая химию' , 'Качественный сервис и грамотные менеджеры' , 'Помощь в выборе товаров и получении информации о них' , 'Скидки и бонусы при регулярных покупках в нашем магазине']
-					- src = 'i/icons/i-' + i + '.svg'
-					li.advantages-block__item
-						.advantages-block__img
-							img(src=`${src}`, alt="icons")
-						p.advantages-block__item-title!=title[i]
-						p.advantages-block__item-text!=text[i]
-			
-			ul.advantages-block__mobile
-				-for(i = 1; i < 5; i++)
-					- title = ['' , 'Ассортимент' , 'Сервис' , 'Помощь' , 'Скидки']
-					- text = ['' , 'Большой выбор товаров для автомоек, включая химию' , 'Качественный сервис и грамотные менеджеры' , 'Помощь в выборе товаров и получении информации о них' , 'Скидки и бонусы при регулярных покупках в нашем магазине']
-					- src = 'i/icons/i-' + i + '.svg'
-					li.advantages-block__item
-						.advantages-block__img
-							img(src=`${src}`, alt="icons")
-						p.advantages-block__item-title!=title[i]
-						p.advantages-block__item-text!=text[i]
-
-	.section_in 	
-		.offer-block 
-			.offer-block__row 
-				.offer-block__col.offer-block__img 		
-					img(src="i/img-block3.jpg", alt="img-block3")
-				.offer-block__col.offer-block__col-right 
-					h2.title-block#promotions Обратитесь к нам <br> <span> прямо сейчас </span> за консультацией
-					.offer-block__text 
-						p Мы практикуем индивидуальный подход к каждому клиенту. Каждый заказ для нас – это отдельная задача, для которой мы внимательно прорабатываем оптимальное решение.
-						p Мы всегда готовы помочь с выбором лучшего оборудования для автомоек, которое подойдет именно для вашего дела.
-						.offer-block__button.offer-block__button.btn-all.js-open-modal(data-modal="call").offer-block__button-mobile  
-							a(href="#")  Оставить заявку
-					
-					.offer-block__contacts
-						.offer-block__contacts-item 
-							img(src="i/icons/i-check.svg", alt="") 
-							p Скачайте весь прайс по 
-								a(href="#")  ссылке
-						.offer-block__contacts-item 
-							img(src="i/icons/i-check.svg", alt="") 
-							p Оставьте заявку или позвоните по телефону 
-								a(href="tel:+78632066888")  8 (863) 20-66-888
-	.discounts
 		.section_in
-			.discounts__row 
-				.discounts__col
-					h2.title-block.discounts__title Скидки на товары <br> для постоянных клиентов
-					p Приобретая товары в нашем магазине, вы всегда можете выгодно сэкономить! Для постоянных покупателей действует система скидок.
-					p Вы можете узнать о ней подробнее, оставив заявку на сайте.
+			.main__row
+				.main__img-bg 
+					img(src="i/img-banner-1.png", alt="")
+				.main__img-footer 
+					img(src="i/img-banner-blur1.png", alt="")
+				.main__col
+					.main__col-left
+						h1 увеличивайте продажи с помощью виджета на вашем сайте 
+						.main__text 
+							p Установите виджет на ваш сайт, который <br> будет собирать контакты посетителей. 
+						.main__advantages.advant-main-screen 
+							.advant-main-screen__list 
+								.advant-main-screen__item 
+									img(src="i/icons/icon1.svg", alt="")
+									p Установка <br> и настройка занимает всего <b> 10 минут</b> 
+								.advant-main-screen__item 
+									img(src="i/icons/icon2.svg", alt="")
+									p <b> Стоимость лида в 15 раз меньше </b> по сравнению с контекстной рекламой
+				.widget-img
+					img(src="i/img-banner-2.png", alt="")
+				.main__col-right 
+					.widget
+						.widget__title Создать виджет
+						.widget__form
+							input(type="checkbox")
+							label Рассчитать прогнозируемую выгоду
+							p Укажите количество посетителей сайта за месяц
+							input.widget__input-style(type="text")
+							p Сайт компании
+							input.widget__input-style(type="text" placeholder="Правильный текст")
+							p Сфера бизнеса
+							input.widget__input-style(type="text" placeholder="Правильный текст")
+							input.widget__loading-logo(type="file" name="file" multiple)
 
-					.discounts__button.btn-all.js-open-modal(data-modal="call")   
-						a(href="#")  Оставить заявку
-				.discounts__col
-					.discounts__img
-						img(src="i/img-block4.png", alt="")
+							.widget__footer 
+								.widget__footer-block 
+									p Соберем контакты
+									.widget__footer-price 200 шт.
+								.widget__footer-block 
+									p Поможем совершить
+									.widget__footer-price 20 продаж
+								.widget__footer-block 
+									p Стоимость тарифа
+									.widget__footer-price 8 000 руб. 
+					.widget-img-footer
+						img(src="i/img-banner-3.png", alt="")
+								
+	.section_in 
+		.advantagesBlock__row 
+			.advantagesBlock__list
+				.advantagesBlock__item 
+					.advantagesBlock__item-title 2 мин
+					.advantagesBlock__item-text на создание <br> виджета
+				.advantagesBlock__item 
+					.advantagesBlock__item-title 3000+
+					.advantagesBlock__item-text виджетов  <br> подключено
+				.advantagesBlock__item 
+					.advantagesBlock__item-title 1 млн
+					.advantagesBlock__item-text лидов <br> уже собрано
+
+
+
+	.brands
+		h2.title-block-center#brands CloudsGoods выбирают
+		.brands__list 
+			.brands__item 
+				img(src="i/icons/logo1.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo2.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo3.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo4.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo5.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo6.svg", alt="")
+			.brands__item 
+				img(src="i/icons/logo7.svg", alt="")
+		
+		//- .brands__list-mobile 
+		//- 	.brands__item 
+		//- 		img(src="i/icons/i-brand1-mobile.svg", alt="")
+		//- 	.brands__item 
+		//- 		img(src="i/icons/i-brand2-mobile.svg", alt="")
+		//- 	.brands__item 
+		//- 		img(src="i/icons/i-brand3-mobile.svg", alt="")
+		//- 	.brands__item 
+		//- 		img(src="i/icons/i-brand4-mobile.svg", alt="")
+
 	.section_in
-		.priceList 
-			h2.title-block-center#price Прайс-лист <span> на все товары </span>
-			ul.priceList__list
-				li.priceList__item
-					.priceList__item-text Название позиции
-					.priceList__item-count 500 руб.
-				li.priceList__item
-					.priceList__item-text Название позиции
-					.priceList__item-count 500 руб.
-			.priceList__button
-				.btn-all.btn-border.js-open-modal(data-modal="call")   
-					a(href="#") Оставить заявку
-				.priceList__butn.btn-all.js-open-modal(data-modal="price") 
-					a(href="") Скачать весь прайс
+		.description-advant 
+			.description-advant__row 
+				.description-advant__col 
+					.description-advant__img 
+						img(src="i/img-desck.png", alt="")
+				.description-advant__col 
+					.description-advant__list 
+						.description-advant__item 
+							.description-advant__item-img 
+								img(src="i/icons/navigate.svg", alt="")
+							.description-advant__item-txt Собирайте контакты всех посетителей вашего сайта
+
+						.description-advant__item 
+							.description-advant__item-img 
+								img(src="i/icons/remove-user.svg", alt="")
+							.description-advant__item-txt Собирайте контакты всех посетителей вашего сайта
+
+						.description-advant__item 
+							.description-advant__item-img 
+								img(src="i/icons/cursor.svg", alt="")
+							.description-advant__item-txt Собирайте контакты всех посетителей вашего сайта
+
+						.description-advant__item 
+							.description-advant__item-img 
+								img(src="i/icons/open mail.svg", alt="")
+							.description-advant__item-txt Собирайте контакты всех посетителей вашего сайта
+
+					.description-advant__button.btn-all
+						a(href="") Подключить
+
+	.section_in
+		.our_works
+			.our_works__title
+				h2 наши кейсы
+			.our_works__slider.slider 
+				.slider__item 
+					.slider__header 
+						p МАРТ 2022
+						.slider__header-dote 
+						p ИСТОРИЯ УСПЕХА
+					.slider__title сеть магазин Modi
+					.slider__body
+						div
+							.slider__body-block
+								.slider__body-txt.slider__body-txt-name Сфера бизнеса:
+								.slider__body-txt.slider__body-txt-desck Сеть магазинов  с товарами разных категорий
+							.slider__body-block
+								.slider__body-txt.slider__body-txt-name Задача:
+								.slider__body-txt.slider__body-txt-desck Собрать 300 лидов с помощью игрового виджета в праздник “День защитника Отечества”
+							.slider__body-block
+								.slider__body-txt.slider__body-txt-name Решение:
+								.slider__body-txt.slider__body-txt-desck Установить виджет с игрой на сайт для сбора контактов всех посетителей. Разыграть в игре скидки на всю продукцию и запустить маркетинговую рассылку по всем игрокам.
+							.slider__body-block
+								.slider__body-txt.slider__body-txt-name Результаты: 
+								.slider__body-txt.slider__body-txt-desck Собрано – 371 лид в праздник. Отправлено 1113 маркетинговых сообщений (цепочка из трех писем). Совершено 57 продаж с применением скидки из игры.
+							.slider__body-block
+								.slider__body-txt.slider__body-txt-name Стоимость: 
+								.slider__body-txt.slider__body-txt-desck 2 500 руб за сбор лидов и отправку писем
+						div
+							.slider__body-img 
+								img(src="i/Mask group.png", alt="")
+
+
 
 	.section_in 
-		.brands 
-			h2.title-block-center#brands У нас <span> представлены бренды </span>
-			.brands__list 
-				.brands__item 
-					img(src="i/icons/i-brand1.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand2.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand3.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand4.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand5.svg", alt="")
-			
-			.brands__list-mobile 
-				.brands__item 
-					img(src="i/icons/i-brand1-mobile.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand2-mobile.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand3-mobile.svg", alt="")
-				.brands__item 
-					img(src="i/icons/i-brand4-mobile.svg", alt="")
+		.templateBlock 
+			h2.templateBlock__title Множество шаблонов для виджетов на сайт
+			p Шаблоны адаптированы под различные сферы бизнеса.
+	.template
+		div
+			.template__img-white
+			img(src="i/template4.jpg", alt="")
+		div
+			img(src="i/template1.jpg", alt="")
+		div
+			img(src="i/template2.jpg", alt="")
+		div
+			img(src="i/template3.jpg", alt="")
+		div
+			.template__img-white
+			img(src="i/template4.jpg", alt="")
+
 
 	.section_in 
-		.reviews 
-			h2.title-block-center#reviews Отзывы <span> довольных клиентов </span>
-			.reviews__list 
-				.reviews__item.item-rev 
-					.item-rev__name Валентин
-					.item-rev__stars-icon 
-						img(src="i/icons/i-stars.svg", alt="")
-					.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					.item-rev__collaps.js-open-modal(data-modal="reviews-1")   Показать весь отзыв
-					.item-rev__elem 
-						img(src="i/icons/i-q-slider.svg", alt="")
-				.reviews__item.item-rev 
-					.item-rev__name Валентин
-					.item-rev__stars-icon 
-						img(src="i/icons/i-stars.svg", alt="")
-					.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					.item-rev__collaps.js-open-modal(data-modal="reviews-2")  Показать весь отзыв
-					.item-rev__elem 
-						img(src="i/icons/i-q-slider.svg", alt="")
-				.reviews__item.item-rev 
-					.item-rev__name Валентин
-					.item-rev__stars-icon 
-						img(src="i/icons/i-stars.svg", alt="")
-					.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					.item-rev__collaps.js-open-modal(data-modal="reviews-3")  Показать весь отзыв
-					.item-rev__elem 
-						img(src="i/icons/i-q-slider.svg", alt="")
-				.reviews__item.item-rev 
-					.item-rev__name Валентин
-					.item-rev__stars-icon 
-						img(src="i/icons/i-stars.svg", alt="")
-					.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					.item-rev__collaps.js-open-modal(data-modal="reviews-4")  Показать весь отзыв
-					.item-rev__elem 
-						img(src="i/icons/i-q-slider.svg", alt="")
-	
-	.section_in 
-		.map 
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acad7fab8af3ec305d923bb12ebfb3e1eeb9b08fb2851a82425599f7804acb1ac&amp;source=constructor" width="100%" height="527" frameborder="0"></iframe>
-	
+	.reviews 
+		.reviews__list 
+			.reviews__item.item-rev 
+				.item-rev__name Валентин
+				.item-rev__stars-icon 
+					img(src="i/icons/i-stars.svg", alt="")
+				.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				.item-rev__collaps.js-open-modal(data-modal="reviews-1")   Показать весь отзыв
+				.item-rev__elem 
+					img(src="i/icons/i-q-slider.svg", alt="")
+			.reviews__item.item-rev 
+				.item-rev__name Валентин
+				.item-rev__stars-icon 
+					img(src="i/icons/i-stars.svg", alt="")
+				.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				.item-rev__collaps.js-open-modal(data-modal="reviews-2")  Показать весь отзыв
+				.item-rev__elem 
+					img(src="i/icons/i-q-slider.svg", alt="")
+			.reviews__item.item-rev 
+				.item-rev__name Валентин
+				.item-rev__stars-icon 
+					img(src="i/icons/i-stars.svg", alt="")
+				.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				.item-rev__collaps.js-open-modal(data-modal="reviews-3")  Показать весь отзыв
+				.item-rev__elem 
+					img(src="i/icons/i-q-slider.svg", alt="")
+			.reviews__item.item-rev 
+				.item-rev__name Валентин
+				.item-rev__stars-icon 
+					img(src="i/icons/i-stars.svg", alt="")
+				.item-rev__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				.item-rev__collaps.js-open-modal(data-modal="reviews-4")  Показать весь отзыв
+				.item-rev__elem 
+					img(src="i/icons/i-q-slider.svg", alt="")
 
 
 
