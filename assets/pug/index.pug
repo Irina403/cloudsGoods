@@ -34,8 +34,12 @@ block content_block
 							input.widget__input-style(type="text" placeholder="Правильный текст")
 							p Сфера бизнеса
 							input.widget__input-style(type="text" placeholder="Правильный текст")
-							input.widget__loading-logo(type="file" name="file" multiple)
-
+							
+							input.widget__loading-logo.input.input__file#input__file(type="file" name="file" multiple)
+							label(for="input__file" class="input__file-button")
+								//- span.input__file-icon-wrapper
+								span.input__file-button-text Загрузить<br>логотип
+							
 							.widget__footer 
 								.widget__footer-block 
 									p Соберем контакты
@@ -46,6 +50,10 @@ block content_block
 								.widget__footer-block 
 									p Стоимость тарифа
 									.widget__footer-price 8 000 руб. 
+								
+							.widget__form-button.btn-all
+								a(href="") Продолжить
+
 					.widget-img-footer
 						img(src="i/img-banner-3.png", alt="")
 								
@@ -182,13 +190,14 @@ block content_block
 				.reviews__item
 					.reviews__col
 						img(src="i/reviews1.png", alt="")
-					.reviews__col
+					.reviews__col-left
 						.reviews__box
 							div
 								.reviews__item-name Сергей 
 								.reviews__item-work сеть ресторанов Вареничная
 							.reviews__item-icon 
-								img(src="i/icons/icon-stars.svg", alt="")
+								img(src="i/icons/icon-fire.svg", alt="")
+								
 					
 						.reviews__item-rating 
 							img(src="i/icons/i-star.svg", alt="")
@@ -201,12 +210,12 @@ block content_block
 
 				.reviews__item
 					.reviews__col
-						img(src="i/reviews1.png", alt="")
-					.reviews__col
+						img(src="i/reviews2.png", alt="")
+					.reviews__col-left
 						.reviews__box
 							div
-								.reviews__item-name Сергей 
-								.reviews__item-work сеть ресторанов Вареничная
+								.reviews__item-name Илья 
+								.reviews__item-work владелец франшизы Cofix
 							.reviews__item-icon 
 								img(src="i/icons/icon-stars.svg", alt="")
 					
@@ -216,4 +225,65 @@ block content_block
 							img(src="i/icons/i-star.svg", alt="")
 							img(src="i/icons/i-star.svg", alt="")
 							img(src="i/icons/i-star.svg", alt="")
-						.reviews__item-text Используем игровой метод для сбора лидов уже полгода. Результаты очень радуют. Значительно сократились расходы на маркетинговое продвижение. 
+						.reviews__item-text  Разместил игру в заведении с помощью брошюр. Как правило, каждый 4 клиент играет и оставляет свой контакт. Сервисом однозначно будем продолжать пользоваться. 
+
+				.reviews__item
+					.reviews__col
+						img(src="i/reviews2.png", alt="")
+					.reviews__col-left
+						.reviews__box
+							div
+								.reviews__item-name Илья 
+								.reviews__item-work владелец франшизы Cofix
+							.reviews__item-icon 
+								img(src="i/icons/icon-stars.svg", alt="")
+					
+						.reviews__item-rating 
+							img(src="i/icons/i-star.svg", alt="")
+							img(src="i/icons/i-star.svg", alt="")
+							img(src="i/icons/i-star.svg", alt="")
+							img(src="i/icons/i-star.svg", alt="")
+							img(src="i/icons/i-star.svg", alt="")
+						.reviews__item-text Разместил игру в заведении с помощью брошюр. Как правило, каждый 4 клиент играет и оставляет свой контакт. Сервисом однозначно будем продолжать пользоваться. 
+
+	//- .section_in 
+	.offerBlock 
+		.offerBlock__col-right
+			.offerBlock__title 
+				h2 Собирайте лидов с помощью виджета на вашем сайте
+			.offerBlock__text Установите виджет на ваш сайт, который будет увеличивать вам продажи. 
+			ul.offerBlock__list
+				li
+					img(src="i/icons/icon-check.svg", alt="") 
+					p Быстрая настройка виджета
+				li
+					img(src="i/icons/icon-check.svg", alt="") 
+					p Стоимость лида ниже чем в рекламе
+				li
+					img(src="i/icons/icon-check.svg", alt="") 
+					p Платите только за сбор контактов
+		.offerBlock__col
+			.tariffWidget
+				.tariffWidget__name Тариф
+				.tariffWidget__subName “Виджет”
+				ul.tariffWidget__list
+					li
+						img(src="i/icons/icon-check.svg", alt="") 
+						p Входит сбор 300 лидов
+					li
+						img(src="i/icons/icon-check.svg", alt="") 
+						p Нет ограничений по времени
+				.tariffWidget__price 1 000 ₽
+				.tariffWidget__button.btn-all Купить
+
+		.offerBlock__feed 
+			img(src="../i/feed-of-pictures.png", alt="")
+
+						
+
+
+
+					
+
+				
+

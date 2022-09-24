@@ -92,7 +92,6 @@
 
 .widget {
     margin-bottom: 10rem;
-    height: 72.4rem;
     margin-right: 16rem;
     margin-left: 2rem;
     position: relative;
@@ -142,6 +141,45 @@
     &__loading-logo {
         margin-top: 1rem;
     }
+    &__form-button {
+        margin-top: 2.2rem;
+        height: 5rem;
+    }
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file-button-text {
+    margin-top: 1px;
+    margin: auto;
+}
+
+.input__file-button {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 125px;
+    height: 125px;
+    background: #fff;
+    color: $color3;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-radius: 3px;
+    cursor: pointer;
+    background-image: url('../i/border-style.svg');
+    background-repeat: no-repeat;
 }
 
 input::placeholder {
@@ -401,6 +439,7 @@ input::placeholder {
         font-size: 4.2rem;
         color: $color3;
         font-family: $font_4;
+        text-transform: uppercase;
     }
     &__list {
         width: 100%;
@@ -410,8 +449,10 @@ input::placeholder {
 }
 
 .reviews__item {
-    width: 57rem;
-    padding: .5rem;
+    position: relative;
+    padding: 4.4rem 3rem;
+    display: flex !important;
+    width: 90% !important;
     border: 5px solid transparent;
     border-radius: 2rem;
     background: linear-gradient(to right, white, white), linear-gradient(110.58deg, #4429EB 0%, #AE6FFF 69.85%, #FFE07D 95.84%);
@@ -426,13 +467,149 @@ input::placeholder {
         font-family: $font_2;
     }
     &-text {
+        margin-top: 0.8rem;
         font-size: 1.6rem;
         font-family: $font_2;
     }
+    &-rating {
+        margin-top: 0.8rem;
+        display: flex;
+    }
+}
+
+.prev {
+    position: absolute;
+    left: -10%;
+    top: 30%;
+}
+
+.next {
+    position: absolute;
+    top: 30%;
+    right: -5%;
 }
 
 .reviews {
-    // &__box {
-    //     display: flex;
-    // }
+    margin-top: 20rem;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col-left {
+        margin-left: 3rem;
+    }
+    &__list {
+        position: relative;
+    }
+}
+
+.offerBlock__list {
+    margin-top: 3rem;
+    li {
+        margin-top: 1.5rem;
+        display: flex;
+        color: $color3;
+        font-size: 2rem;
+        font-family: $font_1;
+        align-items: center;
+    }
+    p {
+        margin-left: 0.5rem;
+    }
+}
+
+.offerBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__col-right {
+        margin-top: 10%;
+        width: 40%;
+        margin-left: 12%;
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-size: 4.2rem;
+        color: $color3;
+        font-family: $font_4;
+    }
+    &__text {
+        margin-top: 3rem;
+        font-size: 2.4rem;
+        color: #474747;
+    }
+    &__col {
+        margin-top: 18%;
+        position: relative;
+        margin-right: 18%;
+    }
+}
+
+.offerBlock__feed {
+    position: absolute;
+    bottom: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.tariffWidget {
+    position: relative;
+    padding: 7.5rem 6.5rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 100px rgba(68, 41, 235, 0.2));
+    z-index: 3;
+    &__name {
+        font-size: 3.2rem;
+        color: $color3;
+        font-family: $font_1;
+    }
+    &__subName {
+        font-size: 4.6rem;
+        font-family: $font_4;
+    }
+    &__list {
+        margin-top: 4rem;
+        li {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: $color3;
+            font-size: 2rem;
+        }
+        p {
+            margin-left: 0.5rem;
+        }
+    }
+    &__price {
+        margin-top: 8rem;
+        color: #28A745;
+        font-size: 4.5rem;
+        letter-spacing: -2%;
+        font-family: $font_4;
+    }
+    &__button {
+        margin-top: 9rem;
+        height: 8rem;
+        color: #fff;
+    }
+}
+
+.offerBlock__col::before {
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2%;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 104%;
+    background: linear-gradient(73.58deg, #4429EB 0%, #AE6FFF 69.85%, #FFE07D 95.84%);
+    z-index: 1;
 }

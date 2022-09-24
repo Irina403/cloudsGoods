@@ -76,7 +76,8 @@
                     <input class="widget__input-style" type="text" placeholder="Правильный текст">
                     <p>Сфера бизнеса</p>
                     <input class="widget__input-style" type="text" placeholder="Правильный текст">
-                    <input class="widget__loading-logo" type="file" name="file" multiple>
+                    <input class="widget__loading-logo input input__file" id="input__file" type="file" name="file" multiple>
+                    <label class="input__file-button" for="input__file"><span class="input__file-button-text">Загрузить<br>логотип</span></label>
                     <div class="widget__footer"> 
                       <div class="widget__footer-block"> 
                         <p>Соберем контакты</p>
@@ -91,6 +92,7 @@
                         <div class="widget__footer-price">8 000 руб. </div>
                       </div>
                     </div>
+                    <div class="widget__form-button btn-all"><a href="">Продолжить</a></div>
                   </div>
                 </div>
                 <div class="widget-img-footer"><img src="i/img-banner-3.png" alt=""></div>
@@ -222,119 +224,88 @@
             <div class="reviews__list">
               <div class="reviews__item">
                 <div class="reviews__col"><img src="i/reviews1.png" alt=""></div>
-                <div class="reviews__col">
+                <div class="reviews__col-left">
                   <div class="reviews__box">
                     <div>
                       <div class="reviews__item-name">Сергей </div>
                       <div class="reviews__item-work">сеть ресторанов Вареничная</div>
                     </div>
-                    <div class="reviews__item-icon"> <img src="i/icons/icon-stars.svg" alt=""></div>
+                    <div class="reviews__item-icon"> <img src="i/icons/icon-fire.svg" alt=""></div>
                   </div>
                   <div class="reviews__item-rating"> <img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""></div>
                   <div class="reviews__item-text">Используем игровой метод для сбора лидов уже полгода. Результаты очень радуют. Значительно сократились расходы на маркетинговое продвижение. </div>
                 </div>
               </div>
               <div class="reviews__item">
-                <div class="reviews__col"><img src="i/reviews1.png" alt=""></div>
-                <div class="reviews__col">
+                <div class="reviews__col"><img src="i/reviews2.png" alt=""></div>
+                <div class="reviews__col-left">
                   <div class="reviews__box">
                     <div>
-                      <div class="reviews__item-name">Сергей </div>
-                      <div class="reviews__item-work">сеть ресторанов Вареничная</div>
+                      <div class="reviews__item-name">Илья </div>
+                      <div class="reviews__item-work">владелец франшизы Cofix</div>
                     </div>
                     <div class="reviews__item-icon"> <img src="i/icons/icon-stars.svg" alt=""></div>
                   </div>
                   <div class="reviews__item-rating"> <img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""></div>
-                  <div class="reviews__item-text">Используем игровой метод для сбора лидов уже полгода. Результаты очень радуют. Значительно сократились расходы на маркетинговое продвижение. </div>
+                  <div class="reviews__item-text"> Разместил игру в заведении с помощью брошюр. Как правило, каждый 4 клиент играет и оставляет свой контакт. Сервисом однозначно будем продолжать пользоваться. </div>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__col"><img src="i/reviews2.png" alt=""></div>
+                <div class="reviews__col-left">
+                  <div class="reviews__box">
+                    <div>
+                      <div class="reviews__item-name">Илья </div>
+                      <div class="reviews__item-work">владелец франшизы Cofix</div>
+                    </div>
+                    <div class="reviews__item-icon"> <img src="i/icons/icon-stars.svg" alt=""></div>
+                  </div>
+                  <div class="reviews__item-rating"> <img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""><img src="i/icons/i-star.svg" alt=""></div>
+                  <div class="reviews__item-text">Разместил игру в заведении с помощью брошюр. Как правило, каждый 4 клиент играет и оставляет свой контакт. Сервисом однозначно будем продолжать пользоваться. </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="offerBlock"> 
+          <div class="offerBlock__col-right">
+            <div class="offerBlock__title"> 
+              <h2>Собирайте лидов с помощью виджета на вашем сайте</h2>
+            </div>
+            <div class="offerBlock__text">Установите виджет на ваш сайт, который будет увеличивать вам продажи. </div>
+            <ul class="offerBlock__list">
+              <li><img src="i/icons/icon-check.svg" alt="">
+                <p>Быстрая настройка виджета</p>
+              </li>
+              <li><img src="i/icons/icon-check.svg" alt="">
+                <p>Стоимость лида ниже чем в рекламе</p>
+              </li>
+              <li><img src="i/icons/icon-check.svg" alt="">
+                <p>Платите только за сбор контактов</p>
+              </li>
+            </ul>
+          </div>
+          <div class="offerBlock__col">
+            <div class="tariffWidget">
+              <div class="tariffWidget__name">Тариф</div>
+              <div class="tariffWidget__subName">“Виджет”</div>
+              <ul class="tariffWidget__list">
+                <li><img src="i/icons/icon-check.svg" alt="">
+                  <p>Входит сбор 300 лидов</p>
+                </li>
+                <li><img src="i/icons/icon-check.svg" alt="">
+                  <p>Нет ограничений по времени</p>
+                </li>
+              </ul>
+              <div class="tariffWidget__price">1 000 ₽</div>
+              <div class="tariffWidget__button btn-all">Купить</div>
+            </div>
+          </div>
+          <div class="offerBlock__feed"> <img src="../i/feed-of-pictures.png" alt=""></div>
         </div>
       </div>
       <footer>
-        <div class="section_in">
-          <div class="contacts" id="contact"> 
-            <div class="contacts__list"> 
-              <div class="contacts__item"> <img src="i/icons/i-map.svg" alt="">
-                <div>
-                  <div class="contacts__name">Адрес:</div>
-                  <div class="contacts__txt">г. Ростов-на-Дону, ул. <br> Лермонтовская, д. 233 А.</div>
-                </div>
-              </div>
-              <div class="contacts__item"> <img src="i/icons/i-tel.svg" alt="">
-                <div>
-                  <div class="contacts__name">Телефон:</div>
-                  <div class="contacts__txt"> <a href="tel:+78632066888">8 (863) 20-66-888 <br></a><a href="tel:+79662066888">8 (966) 20-66-888</a></div>
-                </div>
-              </div>
-              <div class="contacts__item"> <img src="i/icons/i-mail.svg" alt="">
-                <div>
-                  <div class="contacts__name">Почта:</div>
-                  <div class="contacts__txt"> <a href="mailto:89662066888@mail.ru">89662066888@mail.ru</a></div>
-                </div>
-              </div>
-              <div class="contacts__item"> <img src="i/icons/i-teleg-orange.svg" alt="">
-                <div>
-                  <div class="contacts__name">Мессенджеры:</div>
-                  <div class="contacts__social"> <a href="#"> <img src="i/icons/i-telega-footer.svg" alt=""></a><a href="#"><img src="i/icons/i-whatsapp-footer.svg" alt=""></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="map-mobile">
-               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acad7fab8af3ec305d923bb12ebfb3e1eeb9b08fb2851a82425599f7804acb1ac&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe></div>
-          </div>
-          <div class="contacts__footer">
-            <div class="contacts__copyright">© 2022 Все права защищены</div>
-            <div class="contacts__politica"><a href="#">Политика конфиденциальности </a></div>
-            <div class="contacts__arkada"> <a href="#">Разработано arkada-web.ru</a><img src="i/icons/i-arkada-logo.svg" alt=""></div>
-          </div>
-        </div>
-        <div class="overlay js-modal-overlay"> </div>
-        <div class="modal-contact" data-modal="call">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__title">Оставьте свои контакты</div>
-          <div class="modal-contact__text">И мы свяжемся с вами!</div>
-          <form class="contact-form" action="">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон">
-            <div class="submit-button">Отправить</div>
-            <div class="check-block">
-              <input class="custom-checkbox" id="myCheckbox" type="checkbox">
-              <label for="myCheckbox">Отправляя информацию, вы соглашаетесь <br> <a href="#"> c политикой конфиденциальности. </a></label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-contact" data-modal="price">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__title">Оставьте свои контакты</div>
-          <div class="modal-contact__text">И скачайте наш полный прайс!</div>
-          <form class="contact-form" action="">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон">
-            <div class="submit-button">Отправить</div>
-            <div class="check-block">
-              <input class="custom-checkbox" id="myCheckbox" type="checkbox">
-              <label for="myCheckbox">Отправляя информацию, вы соглашаетесь <br> <a href="#"> c политикой конфиденциальности. </a></label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-contact" data-modal="reviews-1">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__riviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
-        </div>
-        <div class="modal-contact" data-modal="reviews-2">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__riviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
-        </div>
-        <div class="modal-contact" data-modal="reviews-3">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__riviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
-        </div>
-        <div class="modal-contact" data-modal="reviews-4">
-          <div class="modal-contact__close"> <img src="i/icons/i-close.svg" alt=""></div>
-          <div class="modal-contact__riviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
-        </div>
+        <div class="section_in"></div>
       </footer>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

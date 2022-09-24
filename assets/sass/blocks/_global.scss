@@ -28,16 +28,16 @@ h1 {
     font-weight: 900;
     line-height: 7rem;
     color: $white;
-    @include bp($point_1) {
-        padding-top: 60rem;
-    }
-    @include bp($point_2) {
-        padding-top: 30rem;
-        width: 100%;
-    }
-    @include bp($point_5) {
-        font-size: 30px;
-    }
+    // @include bp($point_1) {
+    //     padding-top: 60rem;
+    // }
+    // @include bp($point_2) {
+    //     padding-top: 30rem;
+    //     width: 100%;
+    // }
+    // @include bp($point_5) {
+    //     font-size: 30px;
+    // }
 }
 
 .title-block {
