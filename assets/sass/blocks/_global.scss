@@ -15,11 +15,10 @@
     }
 }
 
-.btn-all:hover {
-    background: $color3;
-    box-shadow: 4px 30px 35px rgba(255, 92, 0, 0.25);
-}
-
+// .btn-all:hover {
+//     background: $color3;
+//     box-shadow: 4px 30px 35px rgba(255, 92, 0, 0.25);
+// }
 h1 {
     padding-top: 20rem;
     font-size: 4.8rem;
@@ -28,13 +27,13 @@ h1 {
     font-weight: 900;
     line-height: 7rem;
     color: $white;
-    // @include bp($point_1) {
-    //     padding-top: 60rem;
-    // }
-    // @include bp($point_2) {
-    //     padding-top: 30rem;
-    //     width: 100%;
-    // }
+    @include bp($point_2) {
+        padding-top: 10rem;
+    }
+    @include bp($point_4) {
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
     // @include bp($point_5) {
     //     font-size: 30px;
     // }
